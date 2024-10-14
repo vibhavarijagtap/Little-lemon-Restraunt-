@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+/* Menu Section Styles */
+.menu-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #16a085;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Menu Item Styles */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 600;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item span {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally */
+}
+
+.row {
+    display: flex; /* Use flexbox for the row */
+    justify-content: center; /* Center menu items horizontally */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.menu-item {
+    margin: 15px; /* Add some spacing between items */
+    text-align: center; /* Center text within each item */
+}
